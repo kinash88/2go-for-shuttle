@@ -1,16 +1,18 @@
-# Shuttle 部署指南
+Переведите с китайского на русский
 
-本项目是一个基于 Shuttle 平台的自动化部署方案，可以通过 GitHub Actions 实现自动部署2go节点，每30天自动部署一次
+# Руководство по развертыванию Shuttle
 
-## 部署流程
-1. Fork 本项目
-2. 注册 [Shuttle](https://www.shuttle.rs/) 账号并获取 API 密钥
+Этот проект представляет собой автоматизированное решение для развертывания на платформе Shuttle, которое позволяет автоматически развертывать 2go узлы с помощью GitHub Actions. Развертывание происходит каждые 30 дней.
+
+## Процесс развертывания
+1. Сделайте форк этого проекта.
+2. Зарегистрируйтесь на [Shuttle](https://www.shuttle.rs/) и получите API-ключ.
 ![image](https://github.com/user-attachments/assets/68bf5dc6-8884-4ba6-b88b-b47b66878092)
 
-3. 在 seettings---secrets ansd variables中的actions里设置环境变量：`SHUTTLE_API_KEY`（填入你的 Shuttle API 密钥）
+3. В настройках (settings) --- секреты и переменные (secrets and variables) в разделе actions установите переменную окружения：`SHUTTLE_API_KEY` (введите ваш API-ключ Shuttle).
 ![image](https://github.com/user-attachments/assets/d67ab79b-8d1d-437e-8c6b-786163e197a2)
 
-4. 其他环境变量也可在secrets ansd variable中添加
-5. 安装环境时间稍长，预计部署时间需要10分钟，请耐心等待，在actions中查看进度
-## 订阅 
-https://<你的域名>/<SUB_PATH>
+4. Другие переменные окружения также можно добавить в разделе secrets and variables.
+5. Установка окружения занимает некоторое время, ожидаемое время развертывания составляет около 10 минут. Пожалуйста, наберитесь терпения и следите за прогрессом в actions.
+## Подписка
+https://<ваш домен>/<SUB_PATH>
